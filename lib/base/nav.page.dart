@@ -34,30 +34,24 @@ class _HomeNavigationBarState extends State<HomeNavigationBar> {
         await widget.onTabSelected(index);
       },
       items: [
-        // BottomNavigationBarItem(
-        //   icon: HugeIcon(
-        //     icon: IconlyBold.home,
-        //     color: widget.currentIndex == 0 ? selectedColor : unselectedColor,
-        //     size: 20,
-        //   ),
-        //   label: 'menu_home'.tr(),
-        // ),
-        // BottomNavigationBarItem(
-        //   icon: HugeIcon(
-        //     icon: IconlyBold.category,
-        //     color: widget.currentIndex == 0 ? selectedColor : unselectedColor,
-        //     size: 20,
-        //   ),
-        //   label: 'menu_settings'.tr(),
-        // ),
-        // BottomNavigationBarItem(
-        //   icon: HugeIcon(
-        //     icon: IconlyBold.setting,
-        //     color: widget.currentIndex == 0 ? selectedColor : unselectedColor,
-        //     size: 20,
-        //   ),
-        //   label: 'menu_settings'.tr(),
-        // ),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+              color: widget.currentIndex == 0 ? selectedColor : unselectedColor,
+            ),
+            label: 'Home'),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.list,
+              color: widget.currentIndex == 1 ? selectedColor : unselectedColor,
+            ),
+            label: 'View'),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person,
+              color: widget.currentIndex == 2 ? selectedColor : unselectedColor,
+            ),
+            label: 'Profile'),
       ],
     );
   }

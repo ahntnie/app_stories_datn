@@ -1,5 +1,6 @@
 import 'package:app_stories/constants/themes/theme.serivce.dart';
 import 'package:app_stories/utils/di.dart';
+import 'package:app_stories/views/base/base.view.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: themeService.currentTheme,
-          home: Container(),
+          home: BaseView(),
         );
       },
     );
